@@ -1,6 +1,6 @@
 <footer>
     <div class="footer-top">
-        <div class="footer-top-container container d-flex">
+        <div class="footer-top-container w70 d-flex">
             <div class="footer-list d-flex">
                 <div class="list-left">
                 <ul>
@@ -46,13 +46,13 @@
                 </div>
             </div>
             <div class="footer-top-logo d-flex">
-               <img src="../assets/img/dc-logo-bg.png" alt="">
+               <img src="{{'images/dc-logo-bg.png'}}" alt="">
 
             </div>
         </div>
     </div>
     <div class="footer-bot">
-        <div class="footer-bot-container container d-flex">
+        <div class="footer-bot-container w70 d-flex">
             <div class="button">
                 <a href="">sign-up now!</a>
             </div>
@@ -63,27 +63,27 @@
                         </li>
                         <li>
                             <a href="#">
-                            <img src="../assets/img/footer-facebook.png" alt="">
+                            <img src="{{ asset('images/footer-facebook.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                            <img src="../assets/img/footer-twitter.png" alt="">
+                            <img src="{{ asset('images/footer-twitter.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                            <img src="../assets/img/footer-youtube.png" alt="">
+                            <img src="{{ asset('images/footer-youtube.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                            <img src="../assets/img/footer-pinterest.png" alt="">
+                            <img src="{{ asset('images/footer-pinterest.png') }}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                            <img src="../assets/img/footer-periscope.png" alt="">
+                            <img src="{{ asset('images/footer-periscope.png') }}" alt="">
                             </a>
                         </li>
                     </ul>

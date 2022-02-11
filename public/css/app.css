@@ -1,8 +1,124 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.w70 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header__top {
-  background-color: red;
+  background-color: #0282f9;
+}
+.header__top .inner__header__top ul {
+  justify-content: flex-end;
+}
+.header__top .inner__header__top ul li {
+  display: inline-block;
+  padding: 0.2em 2em;
+}
+.header__top .inner__header__top ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: bold;
 }
 
-header {
-  background-color: black;
+.header__bot {
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+}
+.header__bot .logo img {
+  width: 80%;
+}
+.header__bot .nav ul li {
+  display: inline-block;
+  padding: 1em;
+}
+.header__bot .nav ul li a {
+  color: #1c1c1c;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
 }
 
+footer {
+  background-image: url("/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .footer-top .footer-top-container {
+  justify-content: space-between;
+  text-align: left;
+}
+footer .footer-top .footer-top-container .footer-list {
+  align-items: flex-start;
+}
+footer .footer-top .footer-top-container .footer-list ul {
+  margin-right: 2em;
+}
+footer .footer-top .footer-top-container .footer-list h2 {
+  margin-bottom: 0.5em;
+}
+footer .footer-top .footer-top-container .footer-list a {
+  color: gray;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+footer .footer-top .footer-top-container .footer-list .list-left ul:first-of-type {
+  margin-bottom: 1.5em;
+}
+footer .footer-top .footer-top-container .footer-list .right-list {
+  align-items: flex-start;
+}
+footer .footer-top .footer-top-logo {
+  height: 370px;
+  overflow: hidden;
+}
+footer .footer-bot {
+  background-color: #303030;
+  text-transform: uppercase;
+}
+footer .footer-bot .footer-bot-container {
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-bot .footer-bot-container .button a {
+  color: white;
+  border: 2px solid #0282f9;
+  padding: 1em;
+}
+footer .footer-bot .footer-bot-container ul {
+  padding: 2.5em;
+}
+footer .footer-bot .footer-bot-container ul li {
+  display: inline-block;
+  padding: 0.5em;
+}
+footer .footer-bot .footer-bot-container ul li h2 {
+  color: #0282f9;
+}
