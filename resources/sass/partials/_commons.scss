@@ -17,10 +17,12 @@ html {
 .w70 {
     width: 70%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .d-flex {
     display: flex;
+    align-items: center;
 }
 
 ul {
@@ -29,4 +31,10 @@ ul {
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
 }

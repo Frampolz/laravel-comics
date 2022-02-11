@@ -16,10 +16,12 @@ html {
 .w70 {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .d-flex {
   display: flex;
+  align-items: center;
 }
 
 ul {
@@ -28,6 +30,12 @@ ul {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: white;
+  text-transform: uppercase;
 }
 
 .header__top {
@@ -64,6 +72,93 @@ a {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: bold;
+}
+
+main {
+  background-color: #1c1c1c;
+}
+main .jumbotron {
+  height: 400px;
+  overflow: hidden;
+}
+main .w70 {
+  position: relative;
+}
+main .w70 .current-box {
+  position: absolute;
+  top: -5em;
+  left: 0;
+  background-color: #0282f9;
+  padding: 0.5em 1em;
+}
+main .w70 .card-container {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2em;
+  margin: 4em 0;
+  padding: 0.6em;
+  background-color: #1c1c1c;
+}
+main .w70 .card-container .card-thumbs {
+  flex-basis: calc(16.6666666667% - 2em);
+}
+main .w70 .card-container .card-thumbs .img-box {
+  height: 200px;
+  overflow: hidden;
+}
+main .w70 .card-container .card-thumbs h3 {
+  text-align: start;
+  padding-top: 0.5em;
+  font-weight: normal;
+  font-size: 1em;
+  color: white;
+}
+main .w70 .card-container .button {
+  margin: 0 auto;
+  background-color: #0282f9;
+  padding: 0.5em 3em;
+  margin-top: 1em;
+}
+main .w70 .card-container .button a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7;
+}
+main .main-link {
+  background-color: #0282f9;
+}
+main .main-link ul {
+  justify-content: center;
+}
+main .main-link ul li {
+  display: inline-block;
+  padding: 3em 3.5em;
+}
+main .main-link ul li a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+main .main-link ul li a .icon-box {
+  width: 40px;
+  height: 50px;
+  margin-right: 1em;
+}
+main .main-link ul li a .icon-box img {
+  height: 100%;
+}
+main .main-link ul li a p {
+  color: white;
+}
+main .main-link ul li:last-child a .icon-box {
+  width: 30%;
+}
+main .main-link ul li:last-child a .icon-box img {
+  width: 100%;
 }
 
 footer {
@@ -105,7 +200,6 @@ footer .footer-bot {
 }
 footer .footer-bot .footer-bot-container {
   justify-content: space-between;
-  align-items: center;
 }
 footer .footer-bot .footer-bot-container .button a {
   color: white;
