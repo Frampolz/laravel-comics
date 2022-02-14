@@ -202,6 +202,7 @@ main .main-link ul li:last-child a .icon-box img {
   height: 50px;
   margin: 1em 0;
   justify-content: space-around;
+  border-bottom: 1px solid black;
   color: white;
   background-color: #55ba59;
 }
@@ -228,8 +229,14 @@ main .main-link ul li:last-child a .icon-box img {
 .single-comic-container .shop-comic .right-side {
   width: 30%;
 }
+.single-comic-container .shop-comic .right-side h4 {
+  padding-right: 5px;
+  margin-bottom: 0.2em;
+  text-align: end;
+  text-transform: uppercase;
+}
 .single-comic-container .comic-spec {
-  padding-bottom: 2em;
+  padding: 2em;
   background-color: #f6f6f6;
 }
 .single-comic-container .comic-spec .inner-spec {
@@ -242,6 +249,9 @@ main .main-link ul li:last-child a .icon-box img {
 }
 .single-comic-container .comic-spec .inner-spec .left-side-spec h2,
 .single-comic-container .comic-spec .inner-spec .right-side-spec h2 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  text-transform: capitalize;
   color: black;
 }
 .single-comic-container .comic-spec .inner-spec .left-side-spec h3,
@@ -251,6 +261,7 @@ main .main-link ul li:last-child a .icon-box img {
 }
 .single-comic-container .comic-spec .inner-spec .left-side-spec .art,
 .single-comic-container .comic-spec .inner-spec .left-side-spec .writers {
+  padding: 0.5em;
   justify-content: space-between;
 }
 .single-comic-container .comic-spec .inner-spec .left-side-spec .art {
@@ -271,9 +282,12 @@ main .main-link ul li:last-child a .icon-box img {
 .single-comic-container .comic-spec .inner-spec .right-side-spec .series,
 .single-comic-container .comic-spec .inner-spec .right-side-spec .us-price,
 .single-comic-container .comic-spec .inner-spec .right-side-spec .sale {
-  height: 25%;
+  padding: 0.5em;
   align-items: center;
   border-top: 1px solid black;
+}
+.single-comic-container .comic-spec .inner-spec .right-side-spec .sale {
+  border-bottom: 1px solid black;
 }
 
 footer {
