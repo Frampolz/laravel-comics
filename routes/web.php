@@ -21,7 +21,7 @@ Route::get('/comics', function () {
     return view('guest/comics', ['data'=> config('comics'),'title' => 'Comics']);
 })->name('comics');
 
-Route::get("/comic/{id}", function ($id) {
+Route::get('/comic/{id}', function ($id) {
     $data = config('comics');
     $collection = collect($data);
     $comic= $collection->where('id',$id);

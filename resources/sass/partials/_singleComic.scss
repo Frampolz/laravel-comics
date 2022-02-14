@@ -19,6 +19,8 @@
         .left-side {
             .single-title {
                 text-align: start;
+                text-transform: uppercase;
+                font-size: 0.8em;
             }
             .shop-details {
                 height: 50px;
@@ -62,11 +64,15 @@
         }
     }
     .comic-spec {
-        padding: 2em;
+        padding-top: 2em;
         background-color: $specsBg;
         .inner-spec {
             align-items: unset;
             gap: 3em;
+            a {
+                text-transform: capitalize;
+                color: $specText;
+            }
             .left-side-spec,
             .right-side-spec {
                 width: 50%;
@@ -78,7 +84,7 @@
                 }
                 h3 {
                       font-size: 0.8em;   
-                      color: $specText;   
+                        
                 }
             }
             .left-side-spec {
@@ -113,9 +119,60 @@
                    
                    border-top: 1px solid black;
                } 
+               .series {
+                   a {
+                       font-size: 0.9em;
+                       text-transform: uppercase;
+                   }
+               }
                .sale {
                    border-bottom: 1px solid black;
                }
+            }
+        }
+        .shop-link-container {
+            height: 80px;
+            margin-top: 7em;
+            border-top: 1px solid lightgrey;
+            .inner-shop-link-container {
+                height: 100%;
+                justify-content: center;
+                .shop-link-box {
+                    justify-content: space-between;
+                    flex-basis: calc(100% / 4);
+                    height: 100%;
+                    padding: 0 1.5em;
+                    border-right: 1px solid lightgrey;
+                    h3 {
+                        align-self: flex-start;
+                        font-size: 0.9em;
+                        padding-top: 0.8em;
+                        color: grey;
+                    }
+                    &:first-of-type {
+                        border-left: 1px solid lightgrey;
+                       #digital-phone {
+                            width: 35px;
+                            height: 37px;
+                            background: url(/images/cta-icons.png) 0px 0px;
+                       }
+                    }
+                }
+                #shop-comics {
+                    width: 41px;
+                    height: 37px;
+                    background: url(/images/cta-icons.png) 38px 0px;
+                }
+                #locator {
+                    width: 35px;
+                    height: 37px;
+                    background: url(/images/cta-icons.png) 73px 0px;
+                }
+                #sub {
+                    width: 43px;
+                    height: 37px;
+                    background: url(/images/cta-icons.png) 115px 0px;
+                }
             }
         }
     }

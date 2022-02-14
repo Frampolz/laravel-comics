@@ -197,6 +197,8 @@ main .main-link ul li:last-child a .icon-box img {
 }
 .single-comic-container .shop-comic .left-side .single-title {
   text-align: start;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 .single-comic-container .shop-comic .left-side .shop-details {
   height: 50px;
@@ -236,12 +238,16 @@ main .main-link ul li:last-child a .icon-box img {
   text-transform: uppercase;
 }
 .single-comic-container .comic-spec {
-  padding: 2em;
+  padding-top: 2em;
   background-color: #f6f6f6;
 }
 .single-comic-container .comic-spec .inner-spec {
   align-items: unset;
   gap: 3em;
+}
+.single-comic-container .comic-spec .inner-spec a {
+  text-transform: capitalize;
+  color: #67cae8;
 }
 .single-comic-container .comic-spec .inner-spec .left-side-spec,
 .single-comic-container .comic-spec .inner-spec .right-side-spec {
@@ -257,7 +263,6 @@ main .main-link ul li:last-child a .icon-box img {
 .single-comic-container .comic-spec .inner-spec .left-side-spec h3,
 .single-comic-container .comic-spec .inner-spec .right-side-spec h3 {
   font-size: 0.8em;
-  color: #67cae8;
 }
 .single-comic-container .comic-spec .inner-spec .left-side-spec .art,
 .single-comic-container .comic-spec .inner-spec .left-side-spec .writers {
@@ -286,8 +291,57 @@ main .main-link ul li:last-child a .icon-box img {
   align-items: center;
   border-top: 1px solid black;
 }
+.single-comic-container .comic-spec .inner-spec .right-side-spec .series a {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
 .single-comic-container .comic-spec .inner-spec .right-side-spec .sale {
   border-bottom: 1px solid black;
+}
+.single-comic-container .comic-spec .shop-link-container {
+  height: 80px;
+  margin-top: 7em;
+  border-top: 1px solid lightgrey;
+}
+.single-comic-container .comic-spec .shop-link-container .inner-shop-link-container {
+  height: 100%;
+  justify-content: center;
+}
+.single-comic-container .comic-spec .shop-link-container .inner-shop-link-container .shop-link-box {
+  justify-content: space-between;
+  flex-basis: 25%;
+  height: 100%;
+  padding: 0 1.5em;
+  border-right: 1px solid lightgrey;
+}
+.single-comic-container .comic-spec .shop-link-container .inner-shop-link-container .shop-link-box h3 {
+  align-self: flex-start;
+  font-size: 0.9em;
+  padding-top: 0.8em;
+  color: grey;
+}
+.single-comic-container .comic-spec .shop-link-container .inner-shop-link-container .shop-link-box:first-of-type {
+  border-left: 1px solid lightgrey;
+}
+.single-comic-container .comic-spec .shop-link-container .inner-shop-link-container .shop-link-box:first-of-type #digital-phone {
+  width: 35px;
+  height: 37px;
+  background: url(/images/cta-icons.png) 0px 0px;
+}
+.single-comic-container .comic-spec .shop-link-container .inner-shop-link-container #shop-comics {
+  width: 41px;
+  height: 37px;
+  background: url(/images/cta-icons.png) 38px 0px;
+}
+.single-comic-container .comic-spec .shop-link-container .inner-shop-link-container #locator {
+  width: 35px;
+  height: 37px;
+  background: url(/images/cta-icons.png) 73px 0px;
+}
+.single-comic-container .comic-spec .shop-link-container .inner-shop-link-container #sub {
+  width: 43px;
+  height: 37px;
+  background: url(/images/cta-icons.png) 115px 0px;
 }
 
 footer {

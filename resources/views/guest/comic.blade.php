@@ -53,7 +53,7 @@
                     <div class="artist w70 text-left">
                         <h3>
                             @foreach ($singleComic['artists'] as $item)
-                            {{$item}}
+                            <a href="">{{$item}}</a>,
                             @endforeach
 
                         </h3>
@@ -64,7 +64,7 @@
                     <div class="writer w70 text-left">
                         <h3>
                             @foreach ($singleComic['writers'] as $item)
-                            {{ $item }}
+                            <a href="">{{$item}}</a>,
                             @endforeach
                         </h3>
                     </div>
@@ -77,7 +77,7 @@
                         <h5>Series:</h5>
                     </div>
                     <div class="right-box w70 text-left">
-                        <h3>{{$singleComic['series']}}</h3>
+                        <a href="">{{$singleComic['series']}}</a>,
                     </div>
                 </div>
                 <div class="us-price d-flex">
@@ -96,6 +96,27 @@
                      <h3>{{$singleComic['sale_date']}}</h3>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="shop-link-container">
+            <div class="inner-shop-link-container w70 d-flex">
+                <a class="shop-link-box d-flex" href=""> 
+                    <h3>digital comics</h3>
+                    <div id="digital-phone"></div>
+                </a>
+                <a class="shop-link-box d-flex" href="">
+                    <h3>shop dc</h3>
+                    <div id="shop-comics"></div>
+                </a>
+                <a class="shop-link-box d-flex" href="">
+                     <h3>comics shop locator</h3>
+                     <div id="locator"></div>
+                </a>
+                <a class="shop-link-box d-flex" href="">
+                    <h3>subscription</h3> 
+                    <div id="sub"></div>
+                </a>
             </div>
         </div>
     </div>
