@@ -89,6 +89,10 @@ header .header__bot .nav ul li a {
   font-size: 1em;
   font-weight: bold;
 }
+header .header__bot .nav ul li a:hover, header .header__bot .nav ul li a:active, header .header__bot .nav ul li a:focus, header .header__bot .nav ul li a.active {
+  padding-bottom: 2.8em;
+  border-bottom: 0.3em solid #0282f9;
+}
 header .jumbotron {
   height: 400px;
   overflow: hidden;

@@ -37,6 +37,13 @@ header {
                         text-transform: uppercase;
                         font-size: 1em;
                         font-weight: bold;
+                        &:hover,
+                        &:active,
+                        &:focus,
+                        &.active {
+                            padding-bottom: 2.8em;
+                        border-bottom: 0.3em solid $blue;
+                    }
                     }
                 }
             }

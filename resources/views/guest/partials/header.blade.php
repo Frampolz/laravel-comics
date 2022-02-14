@@ -24,7 +24,7 @@
             <ul>
                 
                 <li><a href="">character</a></li>
-                <li><a href="{{ route('comics') }}">comics</a></li>
+                <li><a class="{{'comics' || 'comic' ===  Route::currentRouteName() ? 'active' : ''}}" href="{{ route('comics') }}">comics</a></li>
                 <li><a href="">movies</a></li>
                 <li><a href="">tv</a></li>
                 <li><a href="">games</a></li>
