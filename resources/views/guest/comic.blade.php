@@ -38,6 +38,7 @@
             </div>
         </div>
         <div class="right-side">
+            <h4>advertisement</h4>
             <div class="adv">
                 <img src="{{  asset('images/single-banner.jpg') }}" alt="">
             </div>
@@ -59,7 +60,7 @@
                     </div>
                 </div>
                 <div class="writers d-flex">
-                    <h5>written by:</h5>
+                    <h5>Written by:</h5>
                     <div class="writer w70 text-left">
                         <h3>
                             @foreach ($singleComic['writers'] as $item)
