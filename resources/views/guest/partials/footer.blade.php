@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="footer-top-logo d-flex">
-               <img src="{{'images/dc-logo-bg.png'}}" alt="">
+               <img src="{{'/images/dc-logo-bg.png'}}" alt="">
 
             </div>
         </div>
