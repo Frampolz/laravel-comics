@@ -8,6 +8,7 @@
                 </li>
                 <li>
                     <a href="">additional dc sites
+                        <i class="fa-solid fa-caret-down"></i>
                 </a>
                 </li>
             </ul>
@@ -32,7 +33,7 @@
                 <li><a href="">videos</a></li>
                 <li><a href="">fans</a></li>
                 <li><a href="">news</a></li>
-                <li><a href="">shop</a></li>
+                <li><a href="">shop <i class="fa-solid fa-caret-down"></i></a></li>
             </ul>
         </nav>
         <div class="search">

@@ -194,6 +194,35 @@ main .main-link ul li:last-child a .icon-box img {
   bottom: 1em;
   left: 0;
 }
+.single-comic-container .blue-row .inner-row .single-comic-thumb .img-box {
+  border: 1px solid white;
+  position: relative;
+}
+.single-comic-container .blue-row .inner-row .single-comic-thumb .img-box .top-bagde,
+.single-comic-container .blue-row .inner-row .single-comic-thumb .img-box .bottom-bagde {
+  background-color: #00a9d9;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 0.3em;
+}
+.single-comic-container .blue-row .inner-row .single-comic-thumb .img-box .top-bagde a,
+.single-comic-container .blue-row .inner-row .single-comic-thumb .img-box .bottom-bagde a {
+  color: white;
+}
+.single-comic-container .blue-row .inner-row .single-comic-thumb .img-box .top-bagde {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.single-comic-container .blue-row .inner-row .single-comic-thumb .img-box .bottom-bagde {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .single-comic-container .shop-comic {
   margin-top: 5em;
   margin-bottom: 5em;
@@ -228,6 +257,10 @@ main .main-link ul li:last-child a .icon-box img {
   height: 100%;
   justify-content: center;
   border-left: 1px solid black;
+}
+.single-comic-container .shop-comic .left-side .shop-details .check span {
+  color: white;
+  text-transform: capitalize;
 }
 .single-comic-container .shop-comic .left-side .description {
   text-align: start;

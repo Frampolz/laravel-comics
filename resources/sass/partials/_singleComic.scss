@@ -9,6 +9,34 @@
                 position: absolute;
                 bottom: 1em;
                 left: 0;
+                .img-box {
+                    border: 1px solid white;
+                    position: relative;
+                    .top-bagde,
+                    .bottom-bagde {
+                        background-color: $badgeBg;
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 0.8em;
+                        padding: 0.3em;
+                        a {
+                            color: white;
+                        }
+                    }
+                    .top-bagde {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .bottom-bagde {
+                        width: 100%;
+                        text-align: center;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
             }
         }
     }
@@ -47,6 +75,10 @@
                     height: 100%;
                     justify-content: center;
                     border-left: 1px solid black;
+                    span {
+                        color: white;
+                        text-transform: capitalize;
+                    }
                 }
             }
             .description {

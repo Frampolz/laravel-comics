@@ -11,6 +11,12 @@
             <div class="single-comic-thumb">
                 <div class="img-box">
                     <img src="{{$singleComic['thumb']}}" alt="">
+                    <div class="top-bagde">
+                        <p>{{$singleComic['type']}}</p>
+                    </div>
+                    <div class="bottom-bagde">
+                        <a href=""><p>view gallery</p></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -29,9 +35,9 @@
                         <span>available</span>
                     </div>
                 </div>
-                <div class="check d-flex">
-                    <span>Check availability</span>
-                </div>
+                <a href="" class="check d-flex">
+                    <span>Check availability <i class="fa-solid fa-caret-down"></i></span>
+                </a>
             </div>
             <div class="description">
                 <p>{{ $singleComic['description'] }}</p>
