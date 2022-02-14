@@ -1,43 +1,49 @@
-.header__top {
-    background-color: $blue;
-    .inner__header__top {
-        ul {
-            justify-content: flex-end;
-            li {
-                display: inline-block;
-                padding: 0.2em 2em;
-                a {
-                    color: white;
-                    text-transform: uppercase;
-                    font-size: 0.7em;
-                    font-weight: bold;
+header {
+    .header__top {
+        background-color: $blue;
+        .inner__header__top {
+            ul {
+                justify-content: flex-end;
+                li {
+                    display: inline-block;
+                    padding: 0.2em 2em;
+                    a {
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 0.7em;
+                        font-weight: bold;
+                    }
                 }
             }
         }
     }
-}
-
-.header__bot {
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em 0;
-    .logo {
-        & img {
-            width: 80%;
+    
+    .header__bot {
+        justify-content: space-around;
+        align-items: center;
+        padding: 1em 0;
+        .logo {
+            & img {
+                width: 80%;
+            }
         }
-    }
-    .nav {
-        ul {
-            li {
-                display: inline-block;
-                padding: 1em;
-                a {
-                    color: $background;
-                    text-transform: uppercase;
-                    font-size: 1em;
-                    font-weight: bold;
+        .nav {
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 1em;
+                    a {
+                        color: $background;
+                        text-transform: uppercase;
+                        font-size: 1em;
+                        font-weight: bold;
+                    }
                 }
             }
         }
+    }
+    .jumbotron {
+            height: 400px;
+            overflow: hidden;
     }
 }

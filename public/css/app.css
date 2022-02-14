@@ -19,6 +19,23 @@ html {
   text-align: center;
 }
 
+.w55 {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: start;
+}
+
 .d-flex {
   display: flex;
   align-items: center;
@@ -38,48 +55,47 @@ h2 {
   text-transform: uppercase;
 }
 
-.header__top {
+header .header__top {
   background-color: #0282f9;
 }
-.header__top .inner__header__top ul {
+header .header__top .inner__header__top ul {
   justify-content: flex-end;
 }
-.header__top .inner__header__top ul li {
+header .header__top .inner__header__top ul li {
   display: inline-block;
   padding: 0.2em 2em;
 }
-.header__top .inner__header__top ul li a {
+header .header__top .inner__header__top ul li a {
   color: white;
   text-transform: uppercase;
   font-size: 0.7em;
   font-weight: bold;
 }
-
-.header__bot {
+header .header__bot {
   justify-content: space-around;
   align-items: center;
   padding: 1em 0;
 }
-.header__bot .logo img {
+header .header__bot .logo img {
   width: 80%;
 }
-.header__bot .nav ul li {
+header .header__bot .nav ul li {
   display: inline-block;
   padding: 1em;
 }
-.header__bot .nav ul li a {
+header .header__bot .nav ul li a {
   color: #1c1c1c;
   text-transform: uppercase;
   font-size: 1em;
   font-weight: bold;
 }
+header .jumbotron {
+  height: 400px;
+  overflow: hidden;
+}
 
 main {
   background-color: #1c1c1c;
-}
-main .jumbotron {
-  height: 400px;
-  overflow: hidden;
 }
 main .w70 {
   position: relative;
@@ -159,6 +175,105 @@ main .main-link ul li:last-child a .icon-box {
 }
 main .main-link ul li:last-child a .icon-box img {
   width: 100%;
+}
+
+.single-comic-container .blue-row {
+  height: 80px;
+  background-color: #0282f9;
+}
+.single-comic-container .blue-row .inner-row {
+  position: relative;
+  height: 100%;
+}
+.single-comic-container .blue-row .inner-row .single-comic-thumb {
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+}
+.single-comic-container .shop-comic {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  gap: 2em;
+}
+.single-comic-container .shop-comic .left-side .single-title {
+  text-align: start;
+}
+.single-comic-container .shop-comic .left-side .shop-details {
+  height: 50px;
+  margin: 1em 0;
+  justify-content: space-around;
+  color: white;
+  background-color: #55ba59;
+}
+.single-comic-container .shop-comic .left-side .shop-details .inner-shop-details {
+  justify-content: space-between;
+  padding: 0 2em;
+}
+.single-comic-container .shop-comic .left-side .shop-details .inner-shop-details .price span {
+  opacity: 0.8;
+}
+.single-comic-container .shop-comic .left-side .shop-details .inner-shop-details .available {
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.single-comic-container .shop-comic .left-side .shop-details .check {
+  width: 30%;
+  height: 100%;
+  justify-content: center;
+  border-left: 1px solid black;
+}
+.single-comic-container .shop-comic .left-side .description {
+  text-align: start;
+}
+.single-comic-container .shop-comic .right-side {
+  width: 30%;
+}
+.single-comic-container .comic-spec {
+  padding-bottom: 2em;
+  background-color: #f6f6f6;
+}
+.single-comic-container .comic-spec .inner-spec {
+  align-items: unset;
+  gap: 3em;
+}
+.single-comic-container .comic-spec .inner-spec .left-side-spec,
+.single-comic-container .comic-spec .inner-spec .right-side-spec {
+  width: 50%;
+}
+.single-comic-container .comic-spec .inner-spec .left-side-spec h2,
+.single-comic-container .comic-spec .inner-spec .right-side-spec h2 {
+  color: black;
+}
+.single-comic-container .comic-spec .inner-spec .left-side-spec h3,
+.single-comic-container .comic-spec .inner-spec .right-side-spec h3 {
+  font-size: 0.8em;
+  color: #67cae8;
+}
+.single-comic-container .comic-spec .inner-spec .left-side-spec .art,
+.single-comic-container .comic-spec .inner-spec .left-side-spec .writers {
+  justify-content: space-between;
+}
+.single-comic-container .comic-spec .inner-spec .left-side-spec .art {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.single-comic-container .comic-spec .inner-spec .left-side-spec .art .artist {
+  margin: 0;
+  padding: 0 1em;
+}
+.single-comic-container .comic-spec .inner-spec .left-side-spec .writers {
+  border-bottom: 1px solid grey;
+}
+.single-comic-container .comic-spec .inner-spec .left-side-spec .writers .writer {
+  margin: 0;
+  padding: 0 1em;
+}
+.single-comic-container .comic-spec .inner-spec .right-side-spec .series,
+.single-comic-container .comic-spec .inner-spec .right-side-spec .us-price,
+.single-comic-container .comic-spec .inner-spec .right-side-spec .sale {
+  height: 25%;
+  align-items: center;
+  border-top: 1px solid black;
 }
 
 footer {

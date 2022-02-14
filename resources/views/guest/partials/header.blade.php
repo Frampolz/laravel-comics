@@ -39,4 +39,7 @@
             <input type="text" placeholder="Search">
         </div>
     </div>
+    <div class="jumbotron">
+        <img src="{{asset('images/jumbotron.jpg')}}" alt="">
+    </div>
 </header>

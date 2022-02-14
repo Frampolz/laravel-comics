@@ -1,9 +1,5 @@
 main {
     background-color: $background;
-        .jumbotron {
-            height: 400px;
-            overflow: hidden;
-        }
         .w70 {
             position: relative;
             .current-box {
@@ -21,13 +17,13 @@ main {
                 margin: 4em 0;
                 padding: 0.6em;
                 background-color: $background;
-
+               
                 .card-thumbs {
                     flex-basis: calc((100% / 6) - 2em);
                         .img-box {
-                        height: 200px;
-                        overflow: hidden;
-                    }
+                            height: 200px;
+                            overflow: hidden;
+                        }
                         h3 {
                             text-align: start;
                             padding-top: 0.5em;
@@ -36,6 +32,8 @@ main {
                             color: white;
                         }
                 }
+
+                
                 .button {
                     margin: 0 auto;
                     background-color: $blue;
@@ -48,7 +46,7 @@ main {
                     font-size: 0.7;
                     }
                 }
-}
+            }
         }
         .main-link {
             background-color: $blue;

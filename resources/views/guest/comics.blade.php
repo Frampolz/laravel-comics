@@ -6,26 +6,25 @@
 
 @section('content')
 <main>
-    <div class="jumbotron">
-        <img src="{{asset('images/jumbotron.jpg')}}" alt="">
-  </div>
     <div class="w70">
-        <div class="current-box">
-            <h2>current series</h2>
-        </div>
-              <div class="card-container d-flex">
-          @foreach ($data as $card)
-        <div class="card-thumbs">
+      <div class="current-box">
+        <h2>current series</h2>
+      </div>
+    <div class="card-container d-flex">
+      @foreach ($data as $card)
+        <a class="card-thumbs" href="{{ route('comic', $card['id']) }}">
             <div class="img-box">
-                <img src="{{$card['thumb']}}" alt="">
+              <img src="{{$card['thumb']}}" alt="">
             </div>
             <div class="title">
-                <h3>{{$card['series']}}</h3>
+              <h3>{{$card['series']}}</h3>
             </div>
-        </div>
-        @endforeach
-    <div class="button"><a href="">load more</a></div>
-  </div>
+        </a>
+      @endforeach
+      <div class="button">
+        <a href="">load more</a>
+      </div>
+    </div>
       </div>
       
       
