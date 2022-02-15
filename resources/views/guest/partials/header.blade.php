@@ -38,6 +38,7 @@
         </nav>
         <div class="search">
             <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </div>
     <div class="jumbotron">

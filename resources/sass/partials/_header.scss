@@ -42,11 +42,24 @@ header {
                         &:focus,
                         &.active {
                             padding-bottom: 2.8em;
-                        border-bottom: 0.3em solid $blue;
-                    }
+                            border-bottom: 0.3em solid $blue;
+                        }
                     }
                 }
             }
+        }
+        .search {
+            border-bottom: 2px solid $blue;
+            input {
+                width: 100px;
+                outline: none;
+                border: none;
+                
+                text-align: end;
+                font-size: 1.1em;
+                font-weight: bold;
+            }
+
         }
     }
     .jumbotron {
