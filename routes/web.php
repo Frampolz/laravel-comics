@@ -29,6 +29,9 @@ Route::get('/comic/{id}', function ($id) {
     foreach ($comic as $value) {
         $singleComic = $value;
     }
+    if ($singleComic == null) {
+        abort(404);
+    }
     /* dd($singleCard); */
     return view('guest/comic', ['singleComic'=> ($singleComic), 'title' => $singleComic['title']]);
 })->name('comic');
